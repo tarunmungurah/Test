@@ -158,9 +158,11 @@ nav ul li a{
     background-image: url(../images/bluebg.png);
 }
 
+
 .img{
-    margin-left: 400px;
-    margin-top: 40px;
+    
+    margin-left: 90%;
+    margin-top: 9%;
 }
 
 .header {
@@ -227,7 +229,7 @@ nav ul li a{
 
 
 .headtextonimg {
-    position: absolute;
+    position:static;
     top: 60px;
     left: 800px;
     font-size: 48px;
@@ -238,7 +240,7 @@ nav ul li a{
 
 
 .textonimg {
-    position: absolute;
+    position:static;
     top: 200px;
     left: 800px;
     font-size: 18px;
