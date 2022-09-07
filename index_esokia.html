@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0c54b7787d.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap.rtl.css">
+
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/0c54b7787d.js"></script>
 
     <title>Esokia</title>
 </head>
@@ -129,6 +132,7 @@
                 deserunt pri ut. Qui ad sumo denique constituto, error abhorreant dissentias vim at. Et his dico
                 eligendi, no legere expetenda sit. </i>
         </div>
+        <!--
         <form class="contact">
 
             <div class="mb-3 mt-3">
@@ -156,6 +160,35 @@
             <br>
             <br>
         </form>
+    -->
+    <div class="container mt-5 ">
+        <form class="row g-3" >
+            <div class="col-md-7" >
+                <label for="obj" class="form-label">Object</label>
+                <input type="text" class="form-control" id="obj">
+            </div>
+            <div class="col-md-7" >
+                <label for="nom" class="form-label">Nom</label>
+                <input type="text" class="form-control" id="nom">
+            </div>
+            <div class="col-md-7" >
+                <label for="emailInfo" class="form-label">Email</label>
+                <input type="email" class="form-control" id="emailInfo">
+            </div>
+            <div class="col-md-7" >
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message"></textarea>
+            </div>
+            
+        </form>
+    </div>
+    <br>
+    <div class="col-md-12">
+        <button type="submit" class="btn btn-success">ENVOYEZ</button>
+    </div>
+
+
+    <br>
 
     </footer>
     <br>
