@@ -13,7 +13,6 @@ button {
 }
 
 /*** NAVBAR ***/
-
 nav {
     background-color: black;
 }
@@ -25,36 +24,37 @@ nav {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     height: 80px;
-
-}
-
-nav li {
-    border-right: 1px solid #4d4d4d;
 }
 
 nav ul {
     display: flex;
     margin-bottom: 0;
-
 }
 
-
-
 nav ul li {
-
     display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-
-
 }
 
 nav ul li a {
-    color: #ffffff;
+    display: flex;
     font-size: 14px;
-    padding: 7px 13px;
     text-transform: uppercase;
+    align-items: center;
+    color: #ffffff;
+}
 
+nav ul li a::after {
+    content: "";
+    width: 1px;
+    height: 13px;
+    background-color: #fff;
+    display: inline-block;
+    margin-left: 19px;
+    margin-right: 19px;
+}
+
+nav ul li:last-child a::after {
+    display: none;
 }
 
 .active,
@@ -96,8 +96,6 @@ a:hover {
 
     .fas {
         display: block;
-
-
     }
 }
 
@@ -137,7 +135,6 @@ a:hover {
     #check:checked~ul {
         left: 0;
     }
-
 }
 
 /** BG + PHONE + TEXT**/
@@ -145,7 +142,6 @@ a:hover {
     background-image: url(../images/bluebg.png);
     height: 469px;
 }
-
 
 .phone-img {
     padding: 36px 0 0 0;
@@ -156,7 +152,6 @@ a:hover {
     font-size: 48px;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
-
 }
 
 .phone-text p {
@@ -166,13 +161,35 @@ a:hover {
     align-items: center;
 }
 
+/** BUTTONS **/
+
 .btn {
-    padding: 15px 48px 15px 48px;
-    color: white;
-    background-color: black;
     text-decoration: none;
+    border-radius: 0;
+    font-family: 'Open Sans', sans-serif;
+   
 }
 
+.btn-primary{
+    color: white;
+    background-color: black;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 10px 47px;
+}
+
+.btn-secondary {
+    background-color: #4ec1e0;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    line-height: 14px;
+    display: inline-block;
+    
+    padding: 8px 36px;
+    
+}
 
 
 .column {
@@ -188,9 +205,7 @@ a:hover {
     width: 50%;
 }
 
-
 /*** Services ***/
-
 .services {
     padding: 60px 0 33px;
 }
@@ -204,75 +219,6 @@ a:hover {
     text-transform: uppercase;
 }
 
-.button {
-    background-color: #4ec1e0;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    font-family: 'Open Sans', sans-serif;
-}
-
-/** Text on blue background **/
-/**
-.container1 {
-    position: relative;
-    width: 100%;
-    max-width: 380px;
-}
-
-.container1 .btn {
-    position: absolute;
-    top: 65%;
-    left: 210%;
-   
-    border: none;
-    color: white;
-    padding: 17px 47px 14px 47px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    font-family: 'Open Sans', sans-serif;
-}
-
-.container1 .btn btn-dark{
-    position: absolute;
-    top: 65%;
-    left: 210%;
-   
-    padding: 17px 47px 14px 47px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    font-family: 'Open Sans', sans-serif;
-}
-
-.container1 .btn:hover {
-    background-color: black;
-}
-
-**/
-
-/** SERVICES **/
-
-.type {
-    font-size: 22px;
-    font-family: 'Open Sans', sans-serif;
-    color: #4ec1e0;
-}
-
-.typetext {
-    font-size: 14px;
-    font-family: 'Open Sans', sans-serif;
-    color: #4e4e4e;
-
-    text-align: center
-}
 
 .pic {
     color: #16deec;
@@ -285,25 +231,44 @@ a:hover {
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    font-size: 62px;
+    margin-bottom: 32px;
 }
 
-/** FOOOTER - CONTACT FORM **/
 
+.type {
+    font-size: 22px;
+    font-family: 'Open Sans', sans-serif;
+    color: #4ec1e0;
+    margin-bottom: 32px;
+}
+
+.typetext {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    color: #4e4e4e;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+
+
+/** FOOOTER - CONTACT FORM **/
 footer {
     background-image: url(../images/footerbg.png);
+    background-repeat: no-repeat;
+    
     padding: 58px 0 30px 0;
 }
 
-.contact {
-    text-align: center;
-}
-
-.contactheader {
+.contactheader h1 {
     font-size: 30px;
     font-family: 'Open Sans', sans-serif;
     color: #4ec1e0;
-
-    padding: 0 668px 42px 649px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;
 }
 
 .contacttext {
@@ -311,13 +276,9 @@ footer {
     font-family: 'Open Sans', sans-serif;
     color: #ffffff;
     text-align: center;
-    padding: 0px 410px 0px 410px;
-
+    margin-bottom: 35px;
 }
 
-textarea {
-    resize: none;
-}
 
 label1 {
     color: white;
@@ -325,84 +286,57 @@ label1 {
     font-size: 14px;
     padding: 0px 0px 0px 300px;
     display: inline-block;
-
 }
 
-.col-25 {
-    float: left;
-    width: 20%;
-    margin-top: 6px;
-}
-
-.col-75 {
-    float: left;
-    width: 62%;
-    margin-top: 6px;
-}
 
 .form-control {
-    width: 70%;
-    margin-left: 15%;
+    width: 524px;
+    height: 44px;
+    
+    padding: 0 0 0 20px;
+    border-radius: 0;
+    margin-bottom: 16px;
+}
+
+.form-control-message{
+    width: 524px;
+    height: 136px;
+    padding: 0 0 0 20px;
+    margin-bottom: 16px;
+    border-radius: 0;
+   
+}
+
+textarea {
+    resize: none;
 }
 
 .c-btn {
     background-color: #7fb618;
     color: white;
-    padding: 12px 35px;
+    padding: 10px 79px;
     cursor: pointer;
+    
 }
 
 /** COPYRIGHT **/
-
 .Copyright {
     font-size: 12px;
     font-family: 'Open Sans', sans-serif;
     color: #6f6f6f;
-    text-align: center
+    text-align: center;
+    padding: 34px 0 38px 0;
 }
 
-
 /** MOBILE (RESPONSIVE) **/
-
 @media only screen and (max-width: 899px) {
-    .head-text-on-img {
-        position: static;
-        top: 60px;
-        left: 800px;
-        font-size: 48px;
-        font-family: 'Open Sans', sans-serif;
-        color: #ffffff;
-        width: 395px;
-    }
-
-
-    .text-on-img {
-        position: static;
-        top: 200px;
-        left: 100px;
-        font-size: 18px;
-        font-family: 'Open Sans', sans-serif;
-        color: #161b1d;
-        width: 400px;
-
-    }
-
-    .container1 .btn {
-
-        top: 105%;
-        left: 0%;
-
-    }
-
-    .img {
+    .phone-img {
         display: none;
     }
 
     .phone {
-
         background-image: url(../images/bluebg.png);
         height: 300px;
-
     }
 
     label1 {
@@ -413,13 +347,18 @@ label1 {
         display: inline-block;
     }
 
+    .contactheader h1 {
+        font-size: 30px;
+        font-family: 'Open Sans', sans-serif;
+        color: #4ec1e0;
+        font-weight: bold;
+        text-align: center;
+    }
+
     .contacttext {
         font-size: 16px;
         font-family: 'Open Sans', sans-serif;
         color: #ffffff;
         text-align: center;
-        padding: 0px 0px 0px 0px;
-
     }
-
 }
