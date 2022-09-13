@@ -252,14 +252,15 @@ a:hover {
 }
 
 
+/** CONTACT FORM **/
 
-/** FOOOTER - CONTACT FORM **/
-footer {
+.contact {
     background-image: url(../images/footerbg.png);
     background-repeat: no-repeat;
-    
-    padding: 58px 0 30px 0;
+    padding: 58px 0 30px 0; 
 }
+
+
 
 .contactheader h1 {
     font-size: 30px;
@@ -280,11 +281,10 @@ footer {
 }
 
 
-label1 {
+label-contact {
     color: white;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
-    padding: 0px 0px 0px 300px;
     display: inline-block;
 }
 
@@ -292,23 +292,21 @@ label1 {
 .form-control {
     width: 524px;
     height: 44px;
-    
-    padding: 0 0 0 20px;
     border-radius: 0;
     margin-bottom: 16px;
 }
-
+/*
 .form-control-message{
     width: 524px;
-    height: 136px;
-    padding: 0 0 0 20px;
+   height: 136px; 
     margin-bottom: 16px;
-    border-radius: 0;
-   
+    border-radius: 0; 
 }
-
-textarea {
+*/
+.form-item textarea {
     resize: none;
+   height: 136px;
+   margin-bottom: 24px;
 }
 
 .c-btn {
@@ -316,10 +314,11 @@ textarea {
     color: white;
     padding: 10px 79px;
     cursor: pointer;
+   
     
 }
 
-/** COPYRIGHT **/
+/** FOOTER **/
 .Copyright {
     font-size: 12px;
     font-family: 'Open Sans', sans-serif;
