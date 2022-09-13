@@ -167,7 +167,7 @@ a:hover {
     text-decoration: none;
     border-radius: 0;
     font-family: 'Open Sans', sans-serif;
-   
+    border: none;
 }
 
 .btn-primary{
@@ -176,6 +176,7 @@ a:hover {
     font-size: 18px;
     line-height: 18px;
     padding: 10px 47px;
+    
 }
 
 .btn-secondary {
@@ -280,14 +281,19 @@ a:hover {
     margin-bottom: 35px;
 }
 
-
+/*
 label-contact {
     color: white;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
-    display: inline-block;
+    
 }
-
+*/
+label{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
 
 .form-control {
     width: 524px;
@@ -338,13 +344,7 @@ label-contact {
         height: 300px;
     }
 
-    label1 {
-        color: white;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 14px;
-        padding: 0px 0px 0px 50px;
-        display: inline-block;
-    }
+  
 
     .contactheader h1 {
         font-size: 30px;
