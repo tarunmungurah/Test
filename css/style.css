@@ -12,7 +12,186 @@ button {
     border: none;
 }
 
+.header {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    padding: 0 25px;
+    transition: 0.3s;
+}
+
+.logo a {
+    display: block;
+}
+
+.logo a img {
+    display: block;
+    width: 100%;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+
+.menu li {
+    list-style-type: none;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 40px 25px;
+    font-size: 18px;
+    line-height: 1;
+    transition: 0.3s;
+}
+
+.menu li a:hover {
+    box-shadow: 0 -5px 0px #ffffff;
+}
+
+.hamburger {
+    position: relative;
+    width: 30px;
+    height: 4px;
+    background: white;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 2;
+    transition: 0.3s;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    right: 0;
+    background: white;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.hamburger::before {
+    top: -10px;
+    width: 20px;
+}
+
+.hamburger::after {
+    top: 10px;
+    width: 25px;
+}
+
+.toggle-menu {
+    position: absolute;
+    width: 30px;
+    height: 100%;
+    z-index: 3;
+    cursor: pointer;
+    opacity: 0;
+}
+
+
+.hamburger,
+.toggle-menu {
+     display: none; 
+}
+
+.navigation input:checked~.hamburger {
+    background: transparent;
+}
+
+
+.navigation input:checked~.hamburger::before {
+    top: 0;
+    transform: rotate(-45deg);
+    width: 30px;
+}
+
+.navigation input:checked~.hamburger::after {
+    top: 0;
+    transform: rotate(45deg);
+    width: 30px;
+}
+.navigation input:checked ~ .menu{
+    right: 0;
+}
+
+@media screen and (max-width: 992px) {
+
+    .hamburger,
+    .toggle-menu {
+        display: block;
+
+    }
+
+    .header {
+       padding: 10px 30px;
+    }
+
+    .menu {
+        justify-content: start;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        background: black;
+        width: 300px;
+        height: 100%;
+        padding-top: 65px;
+
+    }
+
+    .menu li {
+        width: 100%;
+    }
+
+    .menu li a,
+    .menu li a:hover {
+        padding: 30px;
+        font-size: 24px;
+        box-shadow: 0 -1px 0px #ffffff;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*** NAVBAR ***/
+/**
 nav {
     background-color: black;
 }
@@ -136,7 +315,7 @@ a:hover {
         left: 0;
     }
 }
-
+**/
 /** BG + PHONE + TEXT**/
 .phone {
     background-image: url(../images/bluebg.png);
@@ -170,13 +349,13 @@ a:hover {
     border: none;
 }
 
-.btn-primary{
+.btn-primary {
     color: white;
     background-color: black;
     font-size: 18px;
     line-height: 18px;
     padding: 10px 47px;
-    
+
 }
 
 .btn-secondary {
@@ -187,9 +366,9 @@ a:hover {
     font-size: 14px;
     line-height: 14px;
     display: inline-block;
-    
+
     padding: 8px 36px;
-    
+
 }
 
 
@@ -258,8 +437,8 @@ a:hover {
 .contact {
     background-image: url(../images/footerbg.png);
     background-repeat: no-repeat;
-    padding: 58px 0 30px 0; 
-    background-size:cover
+    padding: 58px 0 30px 0;
+    background-size: cover
 }
 
 
@@ -283,14 +462,14 @@ a:hover {
 }
 
 
-label{
+label {
     color: white;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
 }
 
 .form-control {
-    max-width:  524px;
+    max-width: 524px;
     height: 44px;
     border-radius: 0;
     margin-bottom: 16px;
@@ -298,8 +477,8 @@ label{
 
 .form-item textarea {
     resize: none;
-   height: 136px;
-   margin-bottom: 25px;
+    height: 136px;
+    margin-bottom: 25px;
 }
 
 .c-btn {
@@ -308,17 +487,18 @@ label{
     padding: 10px 79px;
     cursor: pointer;
     text-transform: uppercase;
-   
-    
+
+
 }
 
 /** FOOTER **/
 .Copyright {
     font-size: 12px;
+    line-height: 12px;
     font-family: 'Open Sans', sans-serif;
     color: #6f6f6f;
     text-align: center;
-    padding: 34px 0 38px 0;
+    padding: 34px 0 34px 0;
 }
 
 /** MOBILE (RESPONSIVE) **/
@@ -332,7 +512,7 @@ label{
         height: 300px;
     }
 
-  
+
 
     .contactheader h1 {
         font-size: 30px;
