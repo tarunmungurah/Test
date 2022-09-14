@@ -360,4 +360,15 @@ label {
         color: #ffffff;
         text-align: center;
     }
+    .btn-secondary {
+        background-color: #4ec1e0;
+        border: none;
+        color: white;
+        text-align: center;
+        font-size: 14px;
+        line-height: 14px;
+        display: inline-block;
+        padding: 8px 36px;
+        margin-bottom: 25px;
+    }
 }
