@@ -11,7 +11,7 @@ button {
     outline: none;
     border: none;
 }
-
+/*
 .header {
     position: relative;
    
@@ -75,7 +75,7 @@ button {
     content: "";
     width: 1px;
     height: 13px;
-    background-color: #fff;
+    background-color: #4d4d4d;
     display: inline-block;
     margin-left: 19px;
     margin-right: 19px;
@@ -190,10 +190,10 @@ button {
     }
 
 }
-
+*/
 
 /*** NAVBAR ***/
-/**
+
 nav {
     background-color: black;
 }
@@ -317,7 +317,7 @@ a:hover {
         left: 0;
     }
 }
-**/
+
 /** BG + PHONE + TEXT**/
 .phone {
     background-image: url(../images/bluebg.png);
