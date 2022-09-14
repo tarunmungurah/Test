@@ -114,6 +114,7 @@ a:hover {
     .checkbtn {
         display: block;
     }
+    
 
     ul {
         position: fixed;
@@ -140,7 +141,7 @@ a:hover {
     a:hover,
     a.active {
         background: none;
-        color: #0082e6;
+        color: #4ec1e0;
     }
 
     #check:checked~ul {
@@ -277,8 +278,6 @@ a:hover {
     background-size: cover
 }
 
-
-
 .contactheader h1 {
     font-size: 30px;
     font-family: 'Open Sans', sans-serif;
@@ -323,8 +322,6 @@ label {
     padding: 10px 79px;
     cursor: pointer;
     text-transform: uppercase;
-
-
 }
 
 /** FOOTER **/
@@ -347,8 +344,6 @@ label {
         background-image: url(../images/bluebg.png);
         height: 300px;
     }
-
-
 
     .contactheader h1 {
         font-size: 30px;
