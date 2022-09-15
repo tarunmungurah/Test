@@ -12,8 +12,6 @@ button {
     border: none;
 }
 
-
-
 /*** NAVBAR ***/
 
 nav {
@@ -100,7 +98,7 @@ a:hover {
         top: 80px;
     }
 
-    nav .showing{
+    nav .showing {
         display: block;
         height: auto;
     }
@@ -113,9 +111,8 @@ a:hover {
 @media (max-width: 858px) {
     .checkbtn {
         display: block;
-        
+
     }
-    
 
     ul {
         position: fixed;
@@ -153,7 +150,6 @@ a:hover {
         display: none;
     }
 }
-
 
 /** BG + PHONE + TEXT**/
 .phone {
@@ -209,6 +205,15 @@ a:hover {
     padding: 8px 36px;
 }
 
+.btn-contact {
+    background-color: #7fb618;
+    color: white;
+    padding: 13px 76px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 14px;
+}
 
 .column {
     float: left;
@@ -268,7 +273,6 @@ a:hover {
     text-align: center;
     margin-bottom: 32px;
 }
-
 
 /** CONTACT FORM **/
 
@@ -360,6 +364,7 @@ label {
         color: #ffffff;
         text-align: center;
     }
+
     .btn-secondary {
         background-color: #4ec1e0;
         border: none;
