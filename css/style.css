@@ -13,7 +13,6 @@ button {
 }
 
 /*** NAVBAR ***/
-
 nav {
     background-color: black;
 }
@@ -111,7 +110,6 @@ a:hover {
 @media (max-width: 858px) {
     .checkbtn {
         display: block;
-
     }
 
     ul {
@@ -177,7 +175,6 @@ a:hover {
 }
 
 /** BUTTONS **/
-
 .btn {
     text-decoration: none;
     border-radius: 0;
@@ -191,7 +188,6 @@ a:hover {
     font-size: 18px;
     line-height: 18px;
     padding: 10px 47px;
-
 }
 
 .btn-secondary {
@@ -229,7 +225,7 @@ a:hover {
 }
 
 /*** Services ***/
-.services {
+.service {
     padding: 60px 0 33px;
 }
 
@@ -242,8 +238,7 @@ a:hover {
     text-transform: uppercase;
 }
 
-
-.pic {
+.services-item__icons {
     color: #16deec;
     text-align: center;
     color: #4cc0e0;
@@ -258,15 +253,15 @@ a:hover {
     margin-bottom: 32px;
 }
 
-
-.type {
+.services-item__type {
     font-size: 22px;
     font-family: 'Open Sans', sans-serif;
     color: #4ec1e0;
     margin-bottom: 32px;
+    text-transform: uppercase;
 }
 
-.typetext {
+.services-item__text {
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
     color: #4e4e4e;
@@ -275,7 +270,6 @@ a:hover {
 }
 
 /** CONTACT FORM **/
-
 .contact {
     background-image: url(../images/footerbg.png);
     background-repeat: no-repeat;
@@ -341,10 +335,9 @@ label {
 /** MOBILE (RESPONSIVE) **/
 @media only screen and (max-width: 899px) {
     .phone-text {
-       padding: 0 0 0 95px;
+        padding: 0 0 0 95px;
     }
-    
-    
+
     .phone-img {
         display: none;
     }
