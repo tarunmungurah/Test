@@ -1,22 +1,18 @@
 ul {
     list-style: none;
 }
-
 a {
     text-decoration: none;
 }
-
 input,
 button {
     outline: none;
     border: none;
 }
-
 /*** NAVBAR ***/
 nav {
     background-color: black;
 }
-
 .nav-container {
     display: flex;
     justify-content: space-between;
@@ -25,16 +21,13 @@ nav {
     font-size: 14px;
     height: 80px;
 }
-
 nav ul {
     display: flex;
     margin-bottom: 0;
 }
-
 nav ul li {
     display: inline-block;
 }
-
 nav ul li a {
     display: flex;
     font-size: 14px;
@@ -42,7 +35,6 @@ nav ul li a {
     align-items: center;
     color: #ffffff;
 }
-
 nav ul li a::after {
     content: "";
     width: 1px;
@@ -52,21 +44,17 @@ nav ul li a::after {
     margin-left: 19px;
     margin-right: 19px;
 }
-
 nav ul li:last-child a::after {
     display: none;
 }
-
 .active,
 a:hover {
     color: #4ec1e0;
     transition: .5s;
 }
-
 .fas {
     display: none;
 }
-
 .checkbtn {
     font-size: 30px;
     color: white;
@@ -75,43 +63,35 @@ a:hover {
     margin-right: 40px;
     display: none;
 }
-
 #check {
     display: none;
 }
-
 @media (max-width: 858px) {
     label.logo {
         font-size: 30px;
         padding: 20px;
     }
-
     nav ul li a {
         font-size: 16px;
     }
-
     nav ul {
         position: absolute;
         display: none;
         left: 0;
         top: 80px;
     }
-
     nav .showing {
         display: block;
         height: auto;
     }
-
     .fas {
         display: block;
     }
 }
-
 @media (max-width: 858px) {
     .checkbtn {
         display: block;
     }
-
     ul {
         position: fixed;
         width: 100%;
@@ -123,57 +103,47 @@ a:hover {
         transition: all .5s;
         z-index: 4;
     }
-
     nav ul li {
         display: block;
         margin: 50px 0;
         line-height: 30px;
     }
-
     nav ul li a {
         font-size: 20px;
     }
-
     a:hover,
     a.active {
         background: none;
         color: #4ec1e0;
     }
-
     #check:checked~ul {
         left: 0;
     }
-
     nav ul li a::after {
         display: none;
     }
 }
-
 /** BG + PHONE + TEXT**/
 .phone {
     background-image: url(../images/bluebg.png);
     height: 469px;
     background-size: cover;
 }
-
 .phone-img {
     padding: 36px 0 0 0;
 }
-
 .phone-text h1 {
     color: white;
     font-size: 48px;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
 }
-
 .phone-text p {
     font-size: 18px;
     font-family: 'Open Sans', sans-serif;
     color: #161b1d;
     align-items: center;
 }
-
 /** BUTTONS **/
 .btn {
     text-decoration: none;
@@ -181,7 +151,6 @@ a:hover {
     font-family: 'Open Sans', sans-serif;
     border: none;
 }
-
 .btn-primary {
     color: white;
     background-color: black;
@@ -189,7 +158,6 @@ a:hover {
     line-height: 18px;
     padding: 10px 47px;
 }
-
 .btn-secondary {
     background-color: #4ec1e0;
     border: none;
@@ -200,7 +168,6 @@ a:hover {
     display: inline-block;
     padding: 8px 36px;
 }
-
 .btn-contact {
     background-color: #7fb618;
     color: white;
@@ -210,25 +177,20 @@ a:hover {
     font-size: 14px;
     line-height: 14px;
 }
-
 .column {
     float: left;
 }
-
 .left,
 .right {
     width: 25%;
 }
-
 .middle {
     width: 50%;
 }
-
 /*** Services ***/
 .service {
     padding: 60px 0 33px;
 }
-
 .services-title {
     margin: 0 0 55px;
     text-align: center;
@@ -237,7 +199,6 @@ a:hover {
     font-size: 48px;
     text-transform: uppercase;
 }
-
 .services-item__icons {
     color: #16deec;
     text-align: center;
@@ -252,7 +213,6 @@ a:hover {
     font-size: 62px;
     margin-bottom: 32px;
 }
-
 .services-item__type {
     font-size: 22px;
     font-family: 'Open Sans', sans-serif;
@@ -260,7 +220,6 @@ a:hover {
     margin-bottom: 32px;
     text-transform: uppercase;
 }
-
 .services-item__text {
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
@@ -268,7 +227,6 @@ a:hover {
     text-align: center;
     margin-bottom: 32px;
 }
-
 /** CONTACT FORM **/
 .contact {
     background-image: url(../images/footerbg.png);
@@ -276,8 +234,7 @@ a:hover {
     padding: 58px 0 30px 0;
     background-size: cover
 }
-
-.contact-header h1 {
+.contact__header h1 {
     font-size: 30px;
     font-family: 'Open Sans', sans-serif;
     color: #4ec1e0;
@@ -286,42 +243,29 @@ a:hover {
     text-transform: uppercase;
     margin-bottom: 40px;
 }
-
-.contact-text {
+.contact__text {
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
     color: #ffffff;
     text-align: center;
     margin-bottom: 35px;
 }
-
 label {
     color: white;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
 }
-
 .form-control {
     max-width: 524px;
     height: 44px;
     border-radius: 0;
     margin-bottom: 16px;
 }
-
 .form-item textarea {
     resize: none;
     height: 136px;
     margin-bottom: 25px;
 }
-
-.c-btn {
-    background-color: #7fb618;
-    color: white;
-    padding: 10px 79px;
-    cursor: pointer;
-    text-transform: uppercase;
-}
-
 /** FOOTER **/
 .Copyright {
     font-size: 12px;
@@ -331,38 +275,32 @@ label {
     text-align: center;
     padding: 34px 0 34px 0;
 }
-
 /** MOBILE (RESPONSIVE) **/
 @media only screen and (max-width: 899px) {
     .phone-text {
         padding: 0 0 0 95px;
     }
-
     .phone-img {
         display: none;
     }
-
     .phone {
         background-image: url(../images/bluebg.png);
         height: auto;
         padding: 30px 0;
     }
-
-    .contact-header h1 {
+    .contact__header h1 {
         font-size: 30px;
         font-family: 'Open Sans', sans-serif;
         color: #4ec1e0;
         font-weight: bold;
         text-align: center;
     }
-
-    .contact-text {
+    .contact__text {
         font-size: 16px;
         font-family: 'Open Sans', sans-serif;
         color: #ffffff;
         text-align: center;
     }
-
     .btn-secondary {
         background-color: #4ec1e0;
         border: none;
